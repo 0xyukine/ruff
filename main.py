@@ -42,6 +42,9 @@ def compare_dirs(dir1='.', dir2='.'):
 
     # print(x,y)
 
+def md5hash_dir(dir_path):
+    directory = list_dir(dir_path)
+
 def md5hash(file_bytes):
     h = hashlib.new('md5')
     h.update(file_bytes)
